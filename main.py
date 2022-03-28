@@ -1,6 +1,7 @@
 from retweeted import retweeted
 from users import users
 from days import days
+from hashtags import hashtag
 
 def main():
     """ Main program """
@@ -17,6 +18,9 @@ def main():
             print(str(i[0]) + " " + str(i[1]) +"\n")
     elif option == '3':
         for i in days():
+            print(str(i[0]) + " " + str(i[1]) +"\n")
+    elif option == '4':
+        for i in hashtag():
             print(str(i[0]) + " " + str(i[1]) +"\n")
             
 
