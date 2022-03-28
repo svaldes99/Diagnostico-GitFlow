@@ -1,5 +1,6 @@
 from retweeted import retweeted
 from users import users
+from days import days
 
 def main():
     """ Main program """
@@ -11,9 +12,13 @@ def main():
     if option == '1':
         for i in retweeted():
             print(i +"\n")
-    if option == '2':
+    elif option == '2':
         for i in users():
             print(str(i[0]) + " " + str(i[1]) +"\n")
+    elif option == '3':
+        for i in days():
+            print(str(i[0]) + " " + str(i[1]) +"\n")
+            
 
 if __name__ == "__main__":
     main()
