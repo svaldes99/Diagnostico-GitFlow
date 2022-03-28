@@ -23,7 +23,7 @@ def retweeted():
     return_list = []
     for i in most_retweeted:
         return_list.append(f"{i['content']} ")
-    return print(return_list)
+    return return_list
            
  
 

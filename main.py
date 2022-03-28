@@ -1,4 +1,5 @@
 from retweeted import retweeted
+from users import users
 
 def main():
     """ Main program """
@@ -8,8 +9,11 @@ def main():
                    '(3) Top 10 de días con más tweets \n'
                    '(4) Top 10 de hashtags más usados \n')
     if option == '1':
-        retweeted()
-    return 0
+        for i in retweeted():
+            print(i +"\n")
+    if option == '2':
+        for i in users():
+            print(str(i[0]) + " " + str(i[1]) +"\n")
 
 if __name__ == "__main__":
     main()
